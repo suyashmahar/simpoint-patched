@@ -130,7 +130,8 @@ class Utilities {
         static inline void check(bool checkval, const string &msg) {
             if (! checkval) {
                 Logger::log() << "\nError: " << msg << endl;
-                exit(1);
+                int *a = (int*)NULL;
+		*a = *a + 1;
             }
         }
 };
